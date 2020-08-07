@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+
+.feedback{
+  background-color: #000;
+  padding: 80px 0;
+  text-align: center;
+}
+
+
+.inner-width{
+  max-width: 600px;
+  padding: 20px 0;
+  margin: auto;
+}
+
+
+.inner-width h1{
+  color: grey;
+
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+}
+
+
+
+.name,.email,.message{
+  background: none;
+  outline: none;
+  border:  none;
+  border-bottom: 1px solid ;
+  color: #888;
+  padding: 10px 6px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+
+
+.name{
+  float: left;
+  width: 270px;
+}
+
+.email{
+  float: right;
+  width: 270px;
+}
+
+
+.message{
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.app {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.radio {
+  display: none;
+}
+.radio ~ span {
+  font-size: 3rem;
+  filter: grayscale(100);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.radio:checked ~ span {
+  filter: grayscale(0);
+  font-size: 4rem;
+}
+
+
+@media screen and (max-width:600px) {
+  .name,.email{
+    width: 100%;
+  }
+
+}
+
+
+.op:hover{
+  color: white;
+}
+
+
+
+
+
+
+
+
+.btn,.footbut{
+
+	width: 25%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #000;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+
+
+.grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
